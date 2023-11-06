@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Registration</title>
+</head>
+<body>
+<div class="container">
+    <h1>Registration</h1>
+    <form id="registration-form">
+        <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email here" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" required minlength="8" placeholder="The password should consist of at least 8 characters">
+        </div>
+        <div class="form-group">
+            <label for="first-name">First Name*</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name*</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+        </div>
+        <div class="form-group">
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" name="company-name" placeholder="Enter your country">
+        </div>
+        <button type="submit">Sign up</button>
+    </form>
+    <div id="registration-result">
+        <div id="error-popup" class="popup">
+            <div class="popup-container">
+                <p id="popup-message"></p>
+                <span class="close" id="close-popup">&times;</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
